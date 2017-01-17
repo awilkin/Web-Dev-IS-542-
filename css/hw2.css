@@ -1,8 +1,6 @@
-/*#pagewrap {
-	padding: 5px;
-	width: 960px;
-	margin: 20px auto;
-}*/
+.float-left {
+	float:left;
+}
 
 div#header {
 	position: absolute;
@@ -17,10 +15,7 @@ div#left-nav {
 	left: 0;
 	width: 10em;
 	top: 6em;
-	/*bottom: 2em;*/
-	bottom: 15px;
-	/*float: left;*/
-	/*margin-left: 15px;*/
+	bottom: 0;
 }
 
 div#right-nav {
@@ -28,24 +23,45 @@ div#right-nav {
 	right: 0;
 	width: 10em;
 	top: 6em;
-	bottom: 15px;
-	/*bottom: 2em;*/
-	/*float: right;*/
-	/*margin-right: 15px;*/
+	bottom: 0;
 }
 
 div#content {
 	float: left;
 	margin: 6em 10.5em 15px;
-	/*bottom: 15px;*/
-	/*margin-top: 5.5em;*/
-	/*margin-bottom: 2em;*/
+	columns: 3;
 }
 
 div#footer {
-	/*position: absolute;*/
-	/*bottom: 0;*/
 	height: 6em;
 	padding: 0 15px;
 	clear: both;
+}
+
+@media screen and (max-width: 1015px) {
+
+	div#right-nav {
+		position: static;
+		width: auto;
+		float: none;
+	}
+
+	div#left-nav {
+		position: static;
+		width: auto;
+		float: none;
+	}
+
+	div#content {
+		position: static;
+		width: auto;
+		float: none;
+		margin: 0;	
+	}
+
+	div#header {
+		position: static;
+		height: 5em;
+		padding: 0 15px;
+	}
 }
