@@ -1,0 +1,51 @@
+/*#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}*/
+
+div#header {
+	position: absolute;
+	right: 0;
+	left:0;
+	height: 5em;
+	padding: 0 15px;
+}
+
+div#left-nav {
+	position: absolute;
+	left: 0;
+	width: 10em;
+	top: 6em;
+	/*bottom: 2em;*/
+	bottom: 15px;
+	/*float: left;*/
+	/*margin-left: 15px;*/
+}
+
+div#right-nav {
+	position: absolute;
+	right: 0;
+	width: 10em;
+	top: 6em;
+	bottom: 15px;
+	/*bottom: 2em;*/
+	/*float: right;*/
+	/*margin-right: 15px;*/
+}
+
+div#content {
+	float: left;
+	margin: 6em 10.5em 15px;
+	/*bottom: 15px;*/
+	/*margin-top: 5.5em;*/
+	/*margin-bottom: 2em;*/
+}
+
+div#footer {
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	height: 6em;
+	padding: 0 15px;
+	clear: both;
+}
