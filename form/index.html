@@ -1,0 +1,223 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A test page for a web dev class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Form</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Form">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Initiate Pipeline Run</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#features" class="mdl-layout__tab">Features</a>
+          <a href="#features" class="mdl-layout__tab">Other</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Book</h4>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="bookId">
+                  <input type="checkbox" id="bookId" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label">Kilbarchan Parish Record</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="bookId">
+                  <input type="checkbox" id="bookId" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label">The Ely Ancestry</span>
+                </label>
+
+                <div class="h4-space"></div>
+                <h4>Page Range</h4>
+                <input class="mdl-slider mdl-js-slider" type="range"
+                  min="0" max="100" value="0" tabindex="0">
+
+                <div class="h4-space"></div>
+                <h4>Tools</h4>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tool1">
+                  <input type="checkbox" id="tool1" name="tools" value="frontier" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label"> FROntIER</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tool2">
+                  <input type="checkbox" id="tool2" name="tools" value="greendda" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label"> GreenDDA</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tool3">
+                  <input type="checkbox" id="tool3" name="tools" value="greenfie" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label"> GreenFIE</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tool4">
+                  <input type="checkbox" id="tool4" name="tools" value="listreader" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label"> ListReader</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tool5">
+                  <input type="checkbox" id="tool5" name="tools" value="ontoes" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label"> OntoES</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tool6">
+                  <input type="checkbox" id="tool6" name="tools" value="ontosoar" class="mdl-checkbox__input">
+                  <span class="mdl-checkbox__label"> OntoSoar</span>
+                </label>
+
+                <div class="h4-space"></div>
+                <h4>Run Type</h4>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                  <input type="radio" name="runtype" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                  <span class="mdl-radio__label">with COMET</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                  <input type="radio" name="runtype" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                  <span class="mdl-radio__label">without COMET</span>
+                </label>
+
+
+                <!-- Raised button with ripple -->
+              </div>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                  Run
+                </button>
+          </section>
+        </div>
+
+
+        <div class="mdl-layout__tab-panel" id="features">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Features</h4>
+              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              <ul class="toc">
+                <h4>Contents</h4>
+                <a href="#lorem1">Lorem ipsum</a>
+              </ul>
+
+              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
+              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
+              <ul>
+                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
+                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
+                <li>Lorem labore proident officia excepteur do.</li>
+              </ul>
+
+              <p>
+                Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
+              </p>
+              <p>
+                Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
+              </p>
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Features</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Details</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Spec</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Resources</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Technology</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Patterns</a></li>
+                <li><a href="#">Usage</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contracts</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">FAQ</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Answers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              More Information
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

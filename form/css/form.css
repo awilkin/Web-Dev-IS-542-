@@ -1,0 +1,18 @@
+/*#pagewrap {
+	padding: 5px;
+	width: 400px;
+	margin: 20px auto;
+}
+
+label {
+	display: block;
+}*/
+
+.mdl-layout__header-row {
+	height: 50px;
+}
+
+.h4-space {
+	margin-top: 20px;
+}
+
